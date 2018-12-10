@@ -1,0 +1,82 @@
+<!DOCTYPE HTMl>
+<html>
+<head>
+    
+    <style>
+        
+       body{ background-color:#191D32;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+           background-size:;} 
+        
+        h1{
+        background-color:#6D676E;
+        color: #F9C22E;
+        font-family: 'Poiret One',cursive;
+        font-size: 70px;
+        height: 70px;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;}
+        
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px;
+}
+</style>
+    
+    
+</head>
+<body>
+<h1> Tickets</h1>
+    <div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="planet">Planet</label>
+    <select id="country" name="country">
+        <option value="merc">Mercury</option>
+        <option value="venus">Venus</option>
+        <option value="earth">Earth</option>
+        <option value="mars">Mars</option>
+        <option value="jup">Jupiter</option>
+        <option value="sat">Saturn</option>
+        <option value="ura">Uranus</option>
+        <option value="nep">Neptune</option>
+    </select>
+  
+    <input type="submit" value="Book Ticket">
+  </form>
+</body>
+</html>
